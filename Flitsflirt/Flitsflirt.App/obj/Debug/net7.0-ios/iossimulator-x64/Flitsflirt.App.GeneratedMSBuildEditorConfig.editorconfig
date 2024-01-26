@@ -1,0 +1,143 @@
+is_global = true
+build_property.TargetFramework = net7.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Flitsflirt.App
+build_property.ProjectDir = C:\Users\Raff\Source\Repos\FlitsFlirt\Flitsflirt\Flitsflirt.App\
+
+[C:/Users/Raff/Source/Repos/FlitsFlirt/Flitsflirt/Flitsflirt.App/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Flitsflirt.App.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/Raff/Source/Repos/FlitsFlirt/Flitsflirt/Flitsflirt.App/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Flitsflirt.App.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/Raff/Source/Repos/FlitsFlirt/Flitsflirt/Flitsflirt.App/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Flitsflirt.App.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/Raff/Source/Repos/FlitsFlirt/Flitsflirt/Flitsflirt.App/Resources/Styles/DefaultTheme.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Flitsflirt.App.Resources.Styles.DefaultTheme.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\DefaultTheme.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\DefaultTheme.xaml
+
+[C:/Users/Raff/Source/Repos/FlitsFlirt/Flitsflirt/Flitsflirt.App/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Flitsflirt.App.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/Raff/Source/Repos/FlitsFlirt/Flitsflirt/Flitsflirt.App/Views/AboutPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Flitsflirt.App.Views.AboutPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AboutPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AboutPage.xaml
+
+[C:/Users/Raff/Source/Repos/FlitsFlirt/Flitsflirt/Flitsflirt.App/Views/AccountPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Flitsflirt.App.Views.AccountPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AccountPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AccountPage.xaml
+
+[C:/Users/Raff/Source/Repos/FlitsFlirt/Flitsflirt/Flitsflirt.App/Views/DeletePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Flitsflirt.App.Views.DeletePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DeletePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DeletePage.xaml
+
+[C:/Users/Raff/Source/Repos/FlitsFlirt/Flitsflirt/Flitsflirt.App/Views/EditHobbiesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Flitsflirt.App.Views.EditHobbiesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EditHobbiesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EditHobbiesPage.xaml
+
+[C:/Users/Raff/Source/Repos/FlitsFlirt/Flitsflirt/Flitsflirt.App/Views/EditInfoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Flitsflirt.App.Views.EditInfoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EditInfoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EditInfoPage.xaml
+
+[C:/Users/Raff/Source/Repos/FlitsFlirt/Flitsflirt/Flitsflirt.App/Views/EditPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Flitsflirt.App.Views.EditPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\EditPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\EditPage.xaml
+
+[C:/Users/Raff/Source/Repos/FlitsFlirt/Flitsflirt/Flitsflirt.App/Views/FlitsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Flitsflirt.App.Views.FlitsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\FlitsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\FlitsPage.xaml
+
+[C:/Users/Raff/Source/Repos/FlitsFlirt/Flitsflirt/Flitsflirt.App/Views/ItemDetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Flitsflirt.App.Views.ItemDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ItemDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ItemDetailPage.xaml
+
+[C:/Users/Raff/Source/Repos/FlitsFlirt/Flitsflirt/Flitsflirt.App/Views/ItemsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Flitsflirt.App.Views.ItemsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ItemsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ItemsPage.xaml
+
+[C:/Users/Raff/Source/Repos/FlitsFlirt/Flitsflirt/Flitsflirt.App/Views/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Flitsflirt.App.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
+
+[C:/Users/Raff/Source/Repos/FlitsFlirt/Flitsflirt/Flitsflirt.App/Views/MatchedPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Flitsflirt.App.Views.MatchedPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MatchedPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MatchedPage.xaml
+
+[C:/Users/Raff/Source/Repos/FlitsFlirt/Flitsflirt/Flitsflirt.App/Views/NewItemPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Flitsflirt.App.Views.NewItemPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\NewItemPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\NewItemPage.xaml
+
+[C:/Users/Raff/Source/Repos/FlitsFlirt/Flitsflirt/Flitsflirt.App/Views/RegisterHobbiesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Flitsflirt.App.Views.RegisterHobbiesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RegisterHobbiesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RegisterHobbiesPage.xaml
+
+[C:/Users/Raff/Source/Repos/FlitsFlirt/Flitsflirt/Flitsflirt.App/Views/RegisterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Flitsflirt.App.Views.RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RegisterPage.xaml
+
+[C:/Users/Raff/Source/Repos/FlitsFlirt/Flitsflirt/Flitsflirt.App/Views/RegisterPersonPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Flitsflirt.App.Views.RegisterPersonPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RegisterPersonPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RegisterPersonPage.xaml
+
+[C:/Users/Raff/Source/Repos/FlitsFlirt/Flitsflirt/Flitsflirt.App/Views/Templates/KeyValueView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Flitsflirt.App.Views.Templates.KeyValueView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Templates\KeyValueView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Templates\KeyValueView.xaml
+
+[C:/Users/Raff/Source/Repos/FlitsFlirt/Flitsflirt/Flitsflirt.App/Views/TutorialPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Flitsflirt.App.Views.TutorialPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\TutorialPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\TutorialPage.xaml

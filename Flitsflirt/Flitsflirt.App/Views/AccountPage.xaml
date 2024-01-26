@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flitsflirt.App.Views.AccountPage"
+             Title="AccountPage"
+             BackgroundColor="White"
+             Shell.NavBarIsVisible="False">
+
+    <Grid>
+        <Frame x:Name="Frame" Padding="0" Margin="10,10,10,1" BackgroundColor="#d5cdf2" BorderColor="Transparent" HasShadow="True">
+
+            <StackLayout>
+
+                <Frame x:Name="myFrame" HeightRequest="{Binding Height, Source={x:Reference Frame}}" CornerRadius="0" HasShadow="True" BorderColor="#9178D4" BackgroundColor="White" Padding="0">
+                    <Grid>
+
+                        <Image Source="{Binding ImgSource}"  Aspect="Fill"/>
+
+                        <Button Text="⚙️" BackgroundColor="Transparent" HorizontalOptions="End" VerticalOptions="StartAndExpand" Margin="0,30,0,0" FontSize="15" Command="{Binding EditCommand}"/>
+
+                        <Grid Padding="10" HorizontalOptions="CenterAndExpand">
+                            <BoxView Color="#9178D4" VerticalOptions="EndAndExpand" Margin="0,80"  HeightRequest="{Binding Height, Source={x:Reference beschrijving}}" Opacity="{Binding DescriptionBackground}" CornerRadius="15" />
+                            <Label x:Name="beschrijving" Text="{Binding Description}" FontFamily="Hero" FontSize="15" Padding="10" TextColor="White" VerticalOptions="EndAndExpand" Margin="0,80" FontAttributes="Bold"/>
+                        </Grid>
+
+                        <StackLayout Orientation="Horizontal" BackgroundColor="#A997D9" Padding="5" VerticalOptions="Start">
+                            <Label Padding="5,0,0,0" Text="{Binding FirstnameAndAge}" FontSize="21" FontFamily="Hero" FontAttributes="Bold" TextColor="White" HorizontalOptions="StartAndExpand"/>
+                            <Label Padding="0,0,5,0" Text="{Binding City}" FontSize="21" FontFamily="Hero" FontAttributes="Bold" TextColor="White"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HorizontalOptions="Center" VerticalOptions="EndAndExpand" Margin="0,0,0,40">
+                            <Frame Background="#9178D4" Padding="0" HasShadow="True" Margin="0,0,10,0" BorderColor="#9178D4">
+                                <Label Text="{Binding Hobby1}" TextColor="White" FontFamily="Hero" HorizontalOptions="CenterAndExpand" TextTransform="Uppercase" Margin="10" FontSize="Caption"/>
+                            </Frame>
+                            <Frame Background="#9178D4" Padding="0" HasShadow="True" Margin="0,0,10,0" BorderColor="#9178D4">
+                                <Label Text="{Binding Hobby2}" TextColor="White" FontFamily="Hero" HorizontalOptions="CenterAndExpand" TextTransform="Uppercase" Margin="10" FontSize="Caption"/>
+                            </Frame>
+                            <Frame Background="#9178D4" Padding="0" HasShadow="True" BorderColor="#9178D4">
+                                <Label Text="{Binding Hobby3}" TextColor="White" FontFamily="Hero" HorizontalOptions="CenterAndExpand" TextTransform="Uppercase" Margin="10" FontSize="Caption"/>
+                            </Frame>
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+        </Frame>
+    </Grid>
+
+
+</ContentPage>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Flitsflirtdev.Views.AlgoPage"
+             Shell.NavBarIsVisible="False">
+
+
+    <Grid>
+        <Image Source="canvas.png"
+               Aspect="AspectFill"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand"/>
+
+        <Frame HasShadow="True" CornerRadius="20" BorderColor="#A997D9" Margin="5,30,5,30">
+
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#A997D9" Offset="0.1" />
+                    <GradientStop Color="#9178D4" Offset="0.1" />
+                </LinearGradientBrush>
+            </Frame.Background>
+
+            <StackLayout Padding="10">
+
+                <Image Source="flitsflirt_logo.svg" HeightRequest="50" Margin="0,0,0,5" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="FlitsFlirt ⚡ Dev Panel" FontSize="21" FontFamily="FlamanteRomaMedium" TextColor="White" HorizontalOptions="Center" Margin="0,0,0,15"/>
+
+                <Label Text="Leeftijd" FontSize="15" FontFamily="FlamanteRomaMedium" TextColor="White"  Margin="0,0,0,5"/>
+
+                <Frame Padding="0" BorderColor="White" CornerRadius="20" HasShadow="True" BackgroundColor="Transparent" Margin="0,0,0,10">
+                    <Entry x:Name="txtAge" Text="{Binding EnteredAge}" FontFamily="HeroLight" Margin="20,0,20,0" PlaceholderColor="White" TextColor="White" Placeholder="Punten klein leeftijdverschil:" FontSize="Small" Keyboard="Numeric" />
+                    </Frame>
+                    <Frame Padding="0" BorderColor="White" CornerRadius="20" HasShadow="True" BackgroundColor="Transparent" Margin="0,0,0,10">
+                        <Entry x:Name="txtAgediff" Text="{Binding EnteredAgedifference}" FontFamily="HeroLight" Margin="20,0,20,0" PlaceholderColor="White" TextColor="White" Placeholder="Max. leeftijdverschil:" FontSize="Small" Keyboard="Numeric" />
+                    </Frame>
+                    <Label Text="Stad:" FontSize="15" FontFamily="FlamanteRomaMedium" TextColor="White"  Margin="0,0,0,5"/>
+                    <Frame Padding="0" BorderColor="White" CornerRadius="20" HasShadow="True" BackgroundColor="Transparent" Margin="0,0,0,10">
+                        <Entry x:Name="txtCity" Text="{Binding EnteredCity}" FontFamily="HeroLight" Margin="20,0,20,0" PlaceholderColor="White" TextColor="White" Placeholder="Punten gelijke stad:" FontSize="Small" Keyboard="Numeric" />
+                    </Frame>
+                    <Label Text="Hobby's" FontSize="15" FontFamily="FlamanteRomaMedium" TextColor="White"  Margin="0,0,0,5"/>
+                    <Frame Padding="0" BorderColor="White" CornerRadius="20" HasShadow="True" BackgroundColor="Transparent" Margin="0,0,0,5">
+                        <Entry x:Name="txtHobby1" Text="{Binding EnteredOnehobbysame}" FontFamily="HeroLight" Margin="20,0,20,0" PlaceholderColor="White" TextColor="White" Placeholder="Punten 1 gelijke hobby:" FontSize="Small" Keyboard="Numeric" />
+                    </Frame>
+
+                    <Frame Padding="0" BorderColor="White" CornerRadius="20" HasShadow="True" BackgroundColor="Transparent" Margin="0,0,0,5">
+                        <Entry x:Name="txtHobby2" Text="{Binding EnteredTwohobbysame}" FontFamily="HeroLight" Margin="20,0,20,0" PlaceholderColor="White" TextColor="White" Placeholder="Punten 2 gelijke hobby's:" FontSize="Small" Keyboard="Numeric" />
+                    </Frame>
+
+                    <Frame Padding="0" BorderColor="White" CornerRadius="20" HasShadow="True" BackgroundColor="Transparent" Margin="0,0,0,20">
+                        <Entry x:Name="txtHobby3" Text="{Binding EnteredThreehobbysame}" FontFamily="HeroLight" Margin="20,0,20,0" PlaceholderColor="White" TextColor="White" Placeholder="Punten 3 gelijke hobby's:" FontSize="Small"  Keyboard="Numeric"/>
+                    </Frame>
+                    <Label Text="Likes" FontSize="15" FontFamily="FlamanteRomaMedium" TextColor="White" Margin="0,0,0,5"/>
+                    <Frame Padding="0" BorderColor="White" CornerRadius="20" HasShadow="True" BackgroundColor="Transparent" Margin="0,0,0,20">
+                        <Entry x:Name="txtFlitsed" Text="{Binding EnteredFlitsed}" FontFamily="HeroLight" Margin="20,0,20,0" PlaceholderColor="White" TextColor="White" Placeholder="Punten bij like:"  FontSize="Small" Keyboard="Numeric" />
+                    </Frame>
+
+                <Button VerticalOptions="Center" TextColor="Black" FontFamily="HeroLight" BorderColor="Transparent" FontAttributes="Bold" BackgroundColor="#d5cdf2" IsEnabled="True" Text="Update algoritme" Command="{Binding SubmitPointsCommand}" FontSize="Small"/>
+                <Button Text="Hobby's aanpassen" TextColor="Blue" FontFamily="Hero" FontAttributes="Italic" BackgroundColor="Transparent" BorderColor="Transparent" Command="{Binding HobbyCommand}" />
+                <Button Text="Loguit" TextColor="Red" FontFamily="Hero" FontAttributes="Italic" BackgroundColor="Transparent" BorderColor="Transparent" Command="{Binding LogoutCommand}" VerticalOptions="End"/>
+            </StackLayout>
+
+        </Frame>
+    </Grid>
+
+</ContentPage>

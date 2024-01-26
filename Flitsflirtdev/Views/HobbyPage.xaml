@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Flitsflirtdev.Views.HobbyPage"
+             Shell.NavBarIsVisible="False">
+
+
+    <Grid>
+        <Image Source="canvas.png"
+               Aspect="AspectFill"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand"/>
+
+        <Frame HasShadow="True" CornerRadius="20" BorderColor="#A997D9" Margin="5,30,5,30">
+
+
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#A997D9" Offset="0.1" />
+                    <GradientStop Color="#9178D4" Offset="0.1" />
+                </LinearGradientBrush>
+            </Frame.Background>
+
+
+
+            <StackLayout Padding="10" VerticalOptions="Center">
+                <Image Source="flitsflirt_logo.svg" HeightRequest="50" Margin="0,0,0,5" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="DEV PANEL ⚡ Hobby's" FontSize="21" FontFamily="FlamanteRomaMedium" TextColor="White" HorizontalOptions="Center" Margin="0,0,0,15"/>
+
+                
+                <Frame Margin="0,0,0,5" Padding="0" BackgroundColor="Transparent" CornerRadius="20" HasShadow="True" BorderColor="White">
+                    <Picker x:Name="txtupdatehobbyid" Margin="20,0,20,0" Title="Selecteer hobby" FontFamily="Hero" TextColor="White" SelectedIndex="{Binding UpdateHobbyID}" ItemsSource="{Binding ItemList}">
+                    </Picker>
+                </Frame>
+                <Frame Padding="0" BorderColor="White" CornerRadius="20" HasShadow="True" BackgroundColor="Transparent" Margin="0,0,0,5">
+                    <Entry x:Name="txtupdatehobby" Text="{Binding UpdateHobby}" FontFamily="HeroLight" Margin="20,0,20,0" PlaceholderColor="White" TextColor="White" Placeholder="Nieuwe naam:" FontSize="Small" />
+                </Frame>
+                <Button Margin="0,0,0,20" VerticalOptions="Center" TextColor="Black" FontFamily="HeroLight" BorderColor="Transparent" FontAttributes="Bold" BackgroundColor="#d5cdf2" IsEnabled="True" Text="Hobby aanpassen" Command="{Binding EditHobbyCommand}" FontSize="Small"/>
+                
+                <Frame Padding="0" BorderColor="White" CornerRadius="20" HasShadow="True" BackgroundColor="Transparent" Margin="0,0,0,5">
+                    <Entry x:Name="txtnieuwehobby" Text="{Binding NieuweHobby}" FontFamily="HeroLight" Margin="20,0,20,0" PlaceholderColor="White" TextColor="White" Placeholder="Nieuwe hobby:" FontSize="Small"/>
+                </Frame>
+                <Button Margin="0,0,0,20" VerticalOptions="Center" TextColor="Black" FontFamily="HeroLight" BorderColor="Transparent" FontAttributes="Bold" BackgroundColor="#d5cdf2" IsEnabled="True" Text="Hobby toevoegen" Command="{Binding NewHobbyCommand}" FontSize="Small"/>
+                <Button Text="Algoritme aanpassen" TextColor="Blue" FontFamily="Hero" FontAttributes="Italic" BackgroundColor="Transparent" BorderColor="Transparent" Command="{Binding AlgoCommand}" />
+                <Button Text="Loguit" TextColor="Red" FontFamily="Hero" FontAttributes="Italic" BackgroundColor="Transparent" BorderColor="Transparent" Command="{Binding LogoutCommand}" VerticalOptions="End"/>
+            </StackLayout>
+
+        </Frame>
+    </Grid>
+
+</ContentPage>

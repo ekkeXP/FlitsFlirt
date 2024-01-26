@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:Flitsflirt.App.ViewModels"
+             xmlns:models="clr-namespace:Flitsflirt.App.Models"
+             x:Class="Flitsflirt.App.Views.TutorialPage"
+             Shell.NavBarIsVisible="False"
+             x:DataType="viewModels:TutorialViewModel"
+             Title="TutorialPage">
+
+    <Grid RowDefinitions="*,Auto">
+        <Image Source="canvas.png"
+               Aspect="AspectFill"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand"/>
+
+        <CarouselView Grid.Row="0" Position="{Binding Position}"
+                      IndicatorView="indicatorView" 
+                      Loop="False"
+                      HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                      ItemsSource="{Binding TutorialSchermen}">
+            <CarouselView.ItemTemplate>
+                <DataTemplate x:DataType="models:TutorialModel">
+                    <Grid RowDefinitions="200*,150*">
+                        <Image Source="{Binding TutorialImage}" Aspect="AspectFit" Grid.Row="0" WidthRequest="385" HeightRequest="385" />
+                        <VerticalStackLayout Spacing="10" Grid.Row="1">
+                            <Label BackgroundColor="Transparent" Margin="0,0,0,30"/>
+                            <Label Text="{Binding TutorialTitle}" FontSize="28" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                            <Label Text="{Binding TutorialDescription}" FontSize="20"  TextColor="Gray" HorizontalTextAlignment="Center"/>
+                        </VerticalStackLayout>
+                    </Grid>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+
+        <Button  IsVisible="{Binding ButtonVisibility}" VerticalOptions="Center" TextColor="#FFF" BackgroundColor="#9178D4" IsEnabled="True" Text="Begin met Flitsen!" Command="{Binding ButtonCommand}" HorizontalOptions="Center" Margin="0,700,0,0" Padding="10, 5, 10, 5"/>
+        <StackLayout  Orientation="Horizontal"  
+                      Grid.Row="1" BackgroundColor="#9178D4" 
+                      HorizontalOptions="Center"
+                      HeightRequest="50" 
+                      WidthRequest="5000">
+            <IndicatorView x:Name="indicatorView" 
+                IndicatorSize="10"
+                IndicatorColor="#d5cdf2"  
+                SelectedIndicatorColor="#A997D9"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Center"
+            />
+        </StackLayout>
+    </Grid>
+</ContentPage>

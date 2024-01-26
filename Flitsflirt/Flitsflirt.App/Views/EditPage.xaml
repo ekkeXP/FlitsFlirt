@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Flitsflirt.App.Views.EditPage"
+             Shell.NavBarIsVisible="False">
+
+    <Grid>
+        <Image Source="canvas.png"
+               Aspect="AspectFill"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand"/>
+
+        <Frame x:Name="myFrame" HasShadow="True" CornerRadius="20" BorderColor="#A997D9" Margin="5,130,5,130">
+            
+
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#A997D9" Offset="0.1" />
+                    <GradientStop Color="#9178D4" Offset="0.1" />
+                </LinearGradientBrush>
+            </Frame.Background>
+
+            <StackLayout Padding="10,10,10,10" VerticalOptions="Center">
+
+                <StackLayout Margin="0,0,0,50"  Orientation="Horizontal" HorizontalOptions="Center">
+                    <Button IsEnabled="False" Padding="20,10,20,10" CornerRadius="100" VerticalOptions="Center" TextColor="White" FontFamily="HeroLight" FontSize="20" BorderColor="Transparent"  BackgroundColor="#9178D4" Text="🔒" Command="{Binding EditCommand}"/>
+                    <Button IsEnabled="True" Padding="20,10,20,10" CornerRadius="100" VerticalOptions="Center" TextColor="White" FontFamily="HeroLight" FontSize="20" BorderColor="Transparent"  BackgroundColor="Transparent" Text="🧑" Command="{Binding EditHobbiesCommand}"/>
+                    <Button IsEnabled="True" Padding="20,10,20,10" CornerRadius="100" VerticalOptions="Center" TextColor="White" FontFamily="HeroLight" FontSize="20" BorderColor="Transparent" BackgroundColor="Transparent" Text="ℹ️" Command="{Binding EditInfoCommand}"/>
+                    <Button IsEnabled="True" Padding="20,10,20,10" CornerRadius="100" VerticalOptions="Center" TextColor="White" FontFamily="HeroLight" FontSize="20" BorderColor="Transparent"  BackgroundColor="Transparent" Text="❌" Command="{Binding LogoutCommand}"/>
+                </StackLayout>
+
+                <Image Source="lock.png" HeightRequest="100" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Verander wachtwoord" FontSize="24" FontFamily="FlamanteRomaMedium" TextColor="White" HorizontalOptions="Center" Margin="0,0,0,25"/>
+
+
+                <Frame Padding="0" BorderColor="White" CornerRadius="20" HasShadow="True" BackgroundColor="Transparent" Margin="0,0,0,5">
+                    <Entry x:Name="txtUsername" FontFamily="HeroLight" Margin="20,0,20,0" PlaceholderColor="White" TextColor="White" Placeholder="Nieuw wachtwoord" Text="{Binding EnteredPass}" IsPassword="True" FontSize="Medium" />
+                </Frame>
+
+                <Frame Padding="0" BorderColor="White" CornerRadius="20" HasShadow="True" BackgroundColor="Transparent" Margin="0,0,0,10">
+                    <Entry x:Name="txtPassword" FontFamily="HeroLight" Margin="20,0,20,0" PlaceholderColor="White" TextColor="White" Placeholder="Herhaal wachtwoord" Text="{Binding EnteredConfirm}" IsPassword="True" FontSize="Medium" />
+                </Frame>
+
+                <Button VerticalOptions="Center" TextColor="Black" FontFamily="HeroLight" BorderColor="Transparent" FontAttributes="Bold" BackgroundColor="#d5cdf2" IsEnabled="True" Text="Opslaan" Command="{Binding UpdateDataCommand}"/>
+                <Button Margin="0,5,0,0" VerticalOptions="Center" TextColor="white" FontFamily="HeroLight" BorderColor="Transparent" FontAttributes="Bold" BackgroundColor="#7c5bd4" IsEnabled="True" Text="VERWIJDER ACCOUNT" Command="{Binding DeleteCommand}"/>
+                <Button Text="Terug naar account" TextColor="white" FontFamily="Hero" FontAttributes="Bold" BackgroundColor="Transparent" BorderColor="Transparent" Command="{Binding BackCommand}" />
+            </StackLayout>
+
+        </Frame>
+    </Grid>
+
+</ContentPage>

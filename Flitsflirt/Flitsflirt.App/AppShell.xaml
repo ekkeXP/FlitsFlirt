@@ -1,0 +1,73 @@
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:Flitsflirt.App.Views"
+       xmlns:style="clr-namespace:Flitsflirt.App.Resources.Styles"
+       xmlns:app="clr-namespace:Flitsflirt.App"
+       Title="Flitsflirt.App"
+       x:Class="Flitsflirt.App.AppShell" 
+       >
+
+    <Shell.Resources>
+        <Thickness x:Key="TabMargin">10</Thickness>
+        <Thickness x:Key="TabPadding">5</Thickness>
+    </Shell.Resources>
+
+    <TabBar>
+        <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
+    </TabBar>
+
+    <TabBar>
+        <ShellContent Route="RegisterPage" ContentTemplate="{DataTemplate local:RegisterPage}" />
+    </TabBar>
+
+    <TabBar>
+        <ShellContent Route="RegisterPersonPage" ContentTemplate="{DataTemplate local:RegisterPersonPage}" />
+    </TabBar>
+
+    <TabBar>
+        <ShellContent Route="RegisterHobbiesPage" ContentTemplate="{DataTemplate local:RegisterHobbiesPage}" />
+    </TabBar>
+
+    <TabBar>
+        <ShellContent Route="EditPage" ContentTemplate="{DataTemplate local:EditPage}" />
+    </TabBar>
+
+    <TabBar>
+        <ShellContent Route="EditHobbiesPage" ContentTemplate="{DataTemplate local:EditHobbiesPage}" />
+    </TabBar>
+
+    <TabBar>
+        <ShellContent Route="EditInfoPage" ContentTemplate="{DataTemplate local:EditInfoPage}" />
+    </TabBar>
+
+    <TabBar>
+        <ShellContent Route="TutorialPage" ContentTemplate="{DataTemplate local:TutorialPage}" />
+    </TabBar>
+
+    <TabBar>
+        <ShellContent Route="DeletePage" ContentTemplate="{DataTemplate local:DeletePage}" />
+    </TabBar>
+
+
+    <TabBar>
+
+        <Tab Icon="{FontImage FontFamily=FontAwesomeSolid, Glyph={x:Static style:FontAwesomeSolid.Heart}}">
+            <ShellContent Route="MatchedPage" ContentTemplate="{DataTemplate local:MatchedPage}" >
+
+            </ShellContent>
+        </Tab>
+
+        <Tab Icon="{FontImage FontFamily=FontAwesomeSolid, Glyph={x:Static style:FontAwesomeSolid.Bolt}}">
+            <ShellContent Route="FlitsPage" ContentTemplate="{DataTemplate local:FlitsPage}" >
+                
+            </ShellContent>
+        </Tab>
+
+        <Tab Icon="{FontImage FontFamily=FontAwesomeSolid,  
+        Glyph={x:Static style:FontAwesomeSolid.User}}">
+            <ShellContent Route="AccountPage" ContentTemplate="{DataTemplate local:AccountPage}">
+            </ShellContent>
+        </Tab>
+
+    </TabBar>
+</Shell>

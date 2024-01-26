@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Flitsflirtdev.Views.LoginPage"
+             Shell.NavBarIsVisible="False">
+
+    <Grid>
+        <Image Source="canvas.png"
+               Aspect="AspectFill"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand"/>
+
+        <Frame HasShadow="True" CornerRadius="20" BorderColor="#A997D9" Margin="5,130,5,130">
+
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#A997D9" Offset="0.1" />
+                    <GradientStop Color="#9178D4" Offset="0.1" />
+                </LinearGradientBrush>
+            </Frame.Background>
+
+            <StackLayout Padding="10,10,10,10" VerticalOptions="Center">
+                
+                <Image Source="flitsflirt_logo.svg" HeightRequest="150" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Flitsflirt Developer Panel" FontSize="24" FontFamily="FlamanteRomaMedium" TextColor="White" HorizontalOptions="Center" Margin="0,0,0,25"/>
+
+
+                <Frame Padding="0" BorderColor="White" CornerRadius="20" HasShadow="True" BackgroundColor="Transparent" Margin="0,0,0,5">
+                    <Entry x:Name="txtUsername" FontFamily="HeroLight" Margin="20,0,20,0" PlaceholderColor="White" TextColor="White" Placeholder="Voer gebruikersnaam in" Text="{Binding EnteredUser}" FontSize="Medium" />
+                </Frame>
+
+                <Frame Padding="0" BorderColor="White" CornerRadius="20" HasShadow="True" BackgroundColor="Transparent" Margin="0,0,0,10">
+                    <Entry x:Name="txtPassword" FontFamily="HeroLight" Margin="20,0,20,0" PlaceholderColor="White" TextColor="White" Placeholder="Voer wachtwoord in" Text="{Binding EnteredPass}" IsPassword="True" FontSize="Medium" />
+                </Frame>
+
+
+                <Button VerticalOptions="Center" TextColor="Black" FontFamily="HeroLight" BorderColor="Transparent" FontAttributes="Bold" BackgroundColor="#d5cdf2" IsEnabled="True" Text="Login" Command="{Binding LoginCommand}"/>
+            </StackLayout>
+
+            
+
+        </Frame>
+    </Grid>
+
+</ContentPage>

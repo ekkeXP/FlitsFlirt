@@ -1,0 +1,25 @@
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:Flitsflirtdev.Views"
+       xmlns:style="clr-namespace:Flitsflirtdev.Resources.Styles"
+       xmlns:app="clr-namespace:Flitsflirtdev"
+       Title="Flitsflirtdev"
+       x:Class="Flitsflirtdev.AppShell" 
+       >
+
+    <Shell.Resources>
+        <Thickness x:Key="TabMargin">10</Thickness>
+        <Thickness x:Key="TabPadding">5</Thickness>
+    </Shell.Resources>
+
+    <TabBar>
+        <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
+    </TabBar>
+
+    <TabBar>
+        <ShellContent Route="AlgoPage" ContentTemplate="{DataTemplate local:AlgoPage}" />
+    </TabBar>
+    <TabBar>
+        <ShellContent Route="HobbyPage" ContentTemplate="{DataTemplate local:HobbyPage}" />
+    </TabBar>
+</Shell>

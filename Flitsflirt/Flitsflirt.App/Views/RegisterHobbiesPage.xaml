@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flitsflirt.App.Views.RegisterHobbiesPage"
+             Title="RegisterHobbiesPage"
+             Shell.NavBarIsVisible="False">
+    <Grid>
+        <Image Source="canvas.png"
+               Aspect="AspectFill"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand"/>
+
+        <Frame HasShadow="True" CornerRadius="20" BorderColor="#A997D9" Margin="5,180,5,180">
+
+
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#A997D9" Offset="0.1" />
+                    <GradientStop Color="#9178D4" Offset="0.1" />
+                </LinearGradientBrush>
+            </Frame.Background>
+
+            <StackLayout Padding="10">
+
+                <Image Source="flitsflirt_logo.svg" HeightRequest="70" Margin="0,0,0,5" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Laatste stap voor jouw ⚡" FontSize="21" FontFamily="FlamanteRomaMedium" TextColor="White" HorizontalOptions="Center"/>
+                <Label Text="Vul hier 3 van jouw hobby's in" FontSize="15" FontFamily="Hero" TextColor="White" Margin="0,0,0,20" HorizontalOptions="Center"/>
+
+                <Frame Margin="0,0,0,10" Padding="0" BackgroundColor="Transparent" CornerRadius="20" HasShadow="True" BorderColor="White">
+                    <Picker x:Name="Hobby1" Margin="20,0,20,0" Title="Hobby #1" FontFamily="Hero" TextColor="White" SelectedIndex="{Binding PickerHobby1}" ItemsSource="{Binding ItemList}">
+                    </Picker>
+                </Frame>
+
+                <Frame Margin="0,0,0,10" Padding="0" BackgroundColor="Transparent" CornerRadius="20" HasShadow="True" BorderColor="White">
+                    <Picker Margin="20,0,20,0" Title="Hobby #2" FontFamily="Hero" TextColor="White" SelectedIndex="{Binding PickerHobby2}" ItemsSource="{Binding ItemList}">
+                    </Picker>
+                </Frame>
+
+                <Frame Margin="0,0,0,20" Padding="0" BackgroundColor="Transparent" CornerRadius="20" HasShadow="True" BorderColor="White">
+                    <Picker Margin="20,0,20,0" Title="Hobby #3" FontFamily="Hero" TextColor="White" SelectedIndex="{Binding PickerHobby3}" ItemsSource="{Binding ItemList}">
+                    </Picker>
+                </Frame>
+
+                <StackLayout Margin="0,0,0,20" Orientation="Horizontal" VerticalOptions="Start" HorizontalOptions="Center">
+                    <Button Padding="30,10,30,10" Margin="0,0,10,0" VerticalOptions="Center" TextColor="Black" FontFamily="HeroLight" BorderColor="Transparent" FontAttributes="Bold" BackgroundColor="#b7a8f0" IsEnabled="True" Text="Terug" Command="{Binding RegisterPersonCommand}"/>
+                    <Button Padding="30,10,30,10" VerticalOptions="Center" TextColor="Black" FontFamily="HeroLight" BorderColor="Transparent" FontAttributes="Bold" BackgroundColor="#d5cdf2" IsEnabled="True" Text="Verder" Command="{Binding RegisterCommand}"/>
+                </StackLayout>
+
+            </StackLayout>
+
+        </Frame>
+    </Grid>
+</ContentPage>

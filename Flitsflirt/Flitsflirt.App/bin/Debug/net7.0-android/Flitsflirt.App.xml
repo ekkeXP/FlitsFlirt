@@ -1,0 +1,642 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Flitsflirt.App</name>
+    </assembly>
+    <members>
+        <member name="M:Flitsflirt.App.AppShell.OnMenuItemClicked(System.Object,System.EventArgs)">
+            <summary>
+            Logout
+            </summary>
+        </member>
+        <member name="T:Flitsflirt.App.ViewModels.AccountViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.AccountViewModel.FirstName">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.AccountViewModel.firstName"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.AccountViewModel.Age">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.AccountViewModel.age"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.AccountViewModel.FirstnameAndAge">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.AccountViewModel.firstnameAndAge"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.AccountViewModel.City">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.AccountViewModel.city"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.AccountViewModel.Description">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.AccountViewModel.description"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.AccountViewModel.Hobby1">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.AccountViewModel.hobby1"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.AccountViewModel.Hobby2">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.AccountViewModel.hobby2"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.AccountViewModel.Hobby3">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.AccountViewModel.hobby3"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.AccountViewModel.ImgSource">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.AccountViewModel.imgSource"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.AccountViewModel.DescriptionBackground">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.AccountViewModel.descriptionBackground"/>
+        </member>
+        <member name="F:Flitsflirt.App.ViewModels.AccountViewModel.editCommand">
+            <summary>The backing field for <see cref="P:Flitsflirt.App.ViewModels.AccountViewModel.EditCommand"/>.</summary>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.AccountViewModel.EditCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Flitsflirt.App.ViewModels.AccountViewModel.Edit"/>.</summary>
+        </member>
+        <member name="T:Flitsflirt.App.ViewModels.DeleteViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.DeleteViewModel.EntryString">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.DeleteViewModel.entryString"/>
+        </member>
+        <member name="F:Flitsflirt.App.ViewModels.DeleteViewModel.backOutCommand">
+            <summary>The backing field for <see cref="P:Flitsflirt.App.ViewModels.DeleteViewModel.BackOutCommand"/>.</summary>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.DeleteViewModel.BackOutCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:Flitsflirt.App.ViewModels.DeleteViewModel.BackOut(System.Object)"/>.</summary>
+        </member>
+        <member name="F:Flitsflirt.App.ViewModels.DeleteViewModel.deleteCommand">
+            <summary>The backing field for <see cref="P:Flitsflirt.App.ViewModels.DeleteViewModel.DeleteCommand"/>.</summary>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.DeleteViewModel.DeleteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:Flitsflirt.App.ViewModels.DeleteViewModel.Delete(System.Object)"/>.</summary>
+        </member>
+        <member name="T:Flitsflirt.App.ViewModels.EditViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.EditViewModel.EnteredPass">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.EditViewModel.enteredPass"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.EditViewModel.EnteredConfirm">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.EditViewModel.enteredConfirm"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.EditViewModel.EnteredDescription">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.EditViewModel.enteredDescription"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.EditViewModel.PickerHobby1">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.EditViewModel.pickerHobby1"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.EditViewModel.PickerHobby2">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.EditViewModel.pickerHobby2"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.EditViewModel.PickerHobby3">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.EditViewModel.pickerHobby3"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.EditViewModel.ItemList">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.EditViewModel.itemList"/>
+        </member>
+        <member name="F:Flitsflirt.App.ViewModels.EditViewModel.uploadFotoCommand">
+            <summary>The backing field for <see cref="P:Flitsflirt.App.ViewModels.EditViewModel.UploadFotoCommand"/>.</summary>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.EditViewModel.UploadFotoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Flitsflirt.App.ViewModels.EditViewModel.UploadFoto"/>.</summary>
+        </member>
+        <member name="F:Flitsflirt.App.ViewModels.EditViewModel.backCommand">
+            <summary>The backing field for <see cref="P:Flitsflirt.App.ViewModels.EditViewModel.BackCommand"/>.</summary>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.EditViewModel.BackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Flitsflirt.App.ViewModels.EditViewModel.Back"/>.</summary>
+        </member>
+        <member name="F:Flitsflirt.App.ViewModels.EditViewModel.updateHobbiesCommand">
+            <summary>The backing field for <see cref="P:Flitsflirt.App.ViewModels.EditViewModel.UpdateHobbiesCommand"/>.</summary>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.EditViewModel.UpdateHobbiesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Flitsflirt.App.ViewModels.EditViewModel.UpdateHobbies"/>.</summary>
+        </member>
+        <member name="F:Flitsflirt.App.ViewModels.EditViewModel.updateDataCommand">
+            <summary>The backing field for <see cref="P:Flitsflirt.App.ViewModels.EditViewModel.UpdateDataCommand"/>.</summary>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.EditViewModel.UpdateDataCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Flitsflirt.App.ViewModels.EditViewModel.UpdateData"/>.</summary>
+        </member>
+        <member name="F:Flitsflirt.App.ViewModels.EditViewModel.editCommand">
+            <summary>The backing field for <see cref="P:Flitsflirt.App.ViewModels.EditViewModel.EditCommand"/>.</summary>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.EditViewModel.EditCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Flitsflirt.App.ViewModels.EditViewModel.Edit"/>.</summary>
+        </member>
+        <member name="F:Flitsflirt.App.ViewModels.EditViewModel.editHobbiesCommand">
+            <summary>The backing field for <see cref="P:Flitsflirt.App.ViewModels.EditViewModel.EditHobbiesCommand"/>.</summary>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.EditViewModel.EditHobbiesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Flitsflirt.App.ViewModels.EditViewModel.EditHobbies"/>.</summary>
+        </member>
+        <member name="F:Flitsflirt.App.ViewModels.EditViewModel.editInfoCommand">
+            <summary>The backing field for <see cref="P:Flitsflirt.App.ViewModels.EditViewModel.EditInfoCommand"/>.</summary>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.EditViewModel.EditInfoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Flitsflirt.App.ViewModels.EditViewModel.EditInfo"/>.</summary>
+        </member>
+        <member name="F:Flitsflirt.App.ViewModels.EditViewModel.tutorialCommand">
+            <summary>The backing field for <see cref="P:Flitsflirt.App.ViewModels.EditViewModel.TutorialCommand"/>.</summary>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.EditViewModel.TutorialCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Flitsflirt.App.ViewModels.EditViewModel.Tutorial"/>.</summary>
+        </member>
+        <member name="F:Flitsflirt.App.ViewModels.EditViewModel.deleteCommand">
+            <summary>The backing field for <see cref="P:Flitsflirt.App.ViewModels.EditViewModel.DeleteCommand"/>.</summary>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.EditViewModel.DeleteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Flitsflirt.App.ViewModels.EditViewModel.Delete"/>.</summary>
+        </member>
+        <member name="F:Flitsflirt.App.ViewModels.EditViewModel.logoutCommand">
+            <summary>The backing field for <see cref="P:Flitsflirt.App.ViewModels.EditViewModel.LogoutCommand"/>.</summary>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.EditViewModel.LogoutCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Flitsflirt.App.ViewModels.EditViewModel.Logout"/>.</summary>
+        </member>
+        <member name="T:Flitsflirt.App.ViewModels.FlitsViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.FlitsViewModel.Gebruikers">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.FlitsViewModel.gebruikers"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.FlitsViewModel.CurrentGebruiker">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.FlitsViewModel.currentGebruiker"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.FlitsViewModel.Title">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.FlitsViewModel.title"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.FlitsViewModel.Progress">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.FlitsViewModel.progress"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.FlitsViewModel.Pic">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.FlitsViewModel.pic"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.FlitsViewModel.FirstName">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.FlitsViewModel.firstName"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.FlitsViewModel.FirstnameAndAge">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.FlitsViewModel.firstnameAndAge"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.FlitsViewModel.Age">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.FlitsViewModel.age"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.FlitsViewModel.City">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.FlitsViewModel.city"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.FlitsViewModel.Description">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.FlitsViewModel.description"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.FlitsViewModel.DescriptionBackground">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.FlitsViewModel.descriptionBackground"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.FlitsViewModel.HobbyHide">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.FlitsViewModel.hobbyHide"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.FlitsViewModel.Hobby1">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.FlitsViewModel.hobby1"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.FlitsViewModel.Hobby2">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.FlitsViewModel.hobby2"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.FlitsViewModel.Hobby3">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.FlitsViewModel.hobby3"/>
+        </member>
+        <member name="T:Flitsflirt.App.ViewModels.LoginViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.LoginViewModel.EnteredUser">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.LoginViewModel.enteredUser"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.LoginViewModel.EnteredPass">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.LoginViewModel.enteredPass"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.LoginViewModel.Remember">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.LoginViewModel.remember"/>
+        </member>
+        <member name="F:Flitsflirt.App.ViewModels.LoginViewModel.loginCommand">
+            <summary>The backing field for <see cref="P:Flitsflirt.App.ViewModels.LoginViewModel.LoginCommand"/>.</summary>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.LoginViewModel.LoginCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Flitsflirt.App.ViewModels.LoginViewModel.Login"/>.</summary>
+        </member>
+        <member name="F:Flitsflirt.App.ViewModels.LoginViewModel.registerCommand">
+            <summary>The backing field for <see cref="P:Flitsflirt.App.ViewModels.LoginViewModel.RegisterCommand"/>.</summary>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.LoginViewModel.RegisterCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Flitsflirt.App.ViewModels.LoginViewModel.Register"/>.</summary>
+        </member>
+        <member name="T:Flitsflirt.App.ViewModels.MatchedViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.MatchedViewModel.LoadingList">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.MatchedViewModel.loadingList"/>
+        </member>
+        <member name="T:Flitsflirt.App.ViewModels.RegisterViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.RegisterViewModel.EnteredUser">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.RegisterViewModel.enteredUser"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.RegisterViewModel.EnteredEmail">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.RegisterViewModel.enteredEmail"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.RegisterViewModel.EnteredPass">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.RegisterViewModel.enteredPass"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.RegisterViewModel.EnteredConfirm">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.RegisterViewModel.enteredConfirm"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.RegisterViewModel.EnteredFirstName">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.RegisterViewModel.enteredFirstName"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.RegisterViewModel.EnteredBirthDate">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.RegisterViewModel.enteredBirthDate"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.RegisterViewModel.EnteredCity">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.RegisterViewModel.enteredCity"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.RegisterViewModel.EnteredGender">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.RegisterViewModel.enteredGender"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.RegisterViewModel.EnteredPreference">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.RegisterViewModel.enteredPreference"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.RegisterViewModel.PickerHobby1">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.RegisterViewModel.pickerHobby1"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.RegisterViewModel.PickerHobby2">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.RegisterViewModel.pickerHobby2"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.RegisterViewModel.PickerHobby3">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.RegisterViewModel.pickerHobby3"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.RegisterViewModel.ItemList">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.RegisterViewModel.itemList"/>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.RegisterViewModel.Cities">
+            <inheritdoc cref="F:Flitsflirt.App.ViewModels.RegisterViewModel.cities"/>
+        </member>
+        <member name="F:Flitsflirt.App.ViewModels.RegisterViewModel.loginPageCommand">
+            <summary>The backing field for <see cref="P:Flitsflirt.App.ViewModels.RegisterViewModel.LoginPageCommand"/>.</summary>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.RegisterViewModel.LoginPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Flitsflirt.App.ViewModels.RegisterViewModel.LoginPage"/>.</summary>
+        </member>
+        <member name="F:Flitsflirt.App.ViewModels.RegisterViewModel.registerPageCommand">
+            <summary>The backing field for <see cref="P:Flitsflirt.App.ViewModels.RegisterViewModel.RegisterPageCommand"/>.</summary>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.RegisterViewModel.RegisterPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Flitsflirt.App.ViewModels.RegisterViewModel.RegisterPage"/>.</summary>
+        </member>
+        <member name="F:Flitsflirt.App.ViewModels.RegisterViewModel.registerPersonCommand">
+            <summary>The backing field for <see cref="P:Flitsflirt.App.ViewModels.RegisterViewModel.RegisterPersonCommand"/>.</summary>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.RegisterViewModel.RegisterPersonCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Flitsflirt.App.ViewModels.RegisterViewModel.RegisterPerson"/>.</summary>
+        </member>
+        <member name="F:Flitsflirt.App.ViewModels.RegisterViewModel.registerHobbiesCommand">
+            <summary>The backing field for <see cref="P:Flitsflirt.App.ViewModels.RegisterViewModel.RegisterHobbiesCommand"/>.</summary>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.RegisterViewModel.RegisterHobbiesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Flitsflirt.App.ViewModels.RegisterViewModel.RegisterHobbies"/>.</summary>
+        </member>
+        <member name="F:Flitsflirt.App.ViewModels.RegisterViewModel.registerCommand">
+            <summary>The backing field for <see cref="P:Flitsflirt.App.ViewModels.RegisterViewModel.RegisterCommand"/>.</summary>
+        </member>
+        <member name="P:Flitsflirt.App.ViewModels.RegisterViewModel.RegisterCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:Flitsflirt.App.ViewModels.RegisterViewModel.Register(System.Object)"/>.</summary>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_DatePicker.TextColorTo(Microsoft.Maui.Controls.DatePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Editor.TextColorTo(Microsoft.Maui.Controls.Editor,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Entry.TextColorTo(Microsoft.Maui.Controls.Entry,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Label.TextColorTo(Microsoft.Maui.Controls.Label,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Picker.TextColorTo(Microsoft.Maui.Controls.Picker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_RadioButton.TextColorTo(Microsoft.Maui.Controls.RadioButton,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_SearchBar.TextColorTo(Microsoft.Maui.Controls.SearchBar,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_TimePicker.TextColorTo(Microsoft.Maui.Controls.TimePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FirstName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FirstName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Age">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Age" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FirstnameAndAge">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FirstnameAndAge" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.City">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "City" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Description">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Description" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Hobby1">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Hobby1" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Hobby2">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Hobby2" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Hobby3">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Hobby3" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ImgSource">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ImgSource" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.DescriptionBackground">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "DescriptionBackground" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EntryString">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EntryString" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EnteredPass">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EnteredPass" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EnteredConfirm">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EnteredConfirm" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EnteredDescription">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EnteredDescription" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PickerHobby1">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PickerHobby1" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PickerHobby2">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PickerHobby2" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PickerHobby3">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PickerHobby3" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ItemList">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ItemList" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Gebruikers">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Gebruikers" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CurrentGebruiker">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CurrentGebruiker" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Progress">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Progress" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Pic">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Pic" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.HobbyHide">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "HobbyHide" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EnteredUser">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EnteredUser" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Remember">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Remember" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.LoadingList">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "LoadingList" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EnteredEmail">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EnteredEmail" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EnteredFirstName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EnteredFirstName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EnteredBirthDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EnteredBirthDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EnteredCity">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EnteredCity" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EnteredGender">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EnteredGender" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EnteredPreference">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EnteredPreference" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Cities">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Cities" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FirstName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FirstName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Age">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Age" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FirstnameAndAge">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FirstnameAndAge" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.City">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "City" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Description">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Description" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Hobby1">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Hobby1" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Hobby2">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Hobby2" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Hobby3">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Hobby3" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ImgSource">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ImgSource" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.DescriptionBackground">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "DescriptionBackground" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EntryString">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EntryString" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EnteredPass">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EnteredPass" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EnteredConfirm">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EnteredConfirm" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EnteredDescription">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EnteredDescription" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PickerHobby1">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PickerHobby1" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PickerHobby2">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PickerHobby2" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PickerHobby3">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PickerHobby3" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ItemList">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ItemList" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Gebruikers">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Gebruikers" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CurrentGebruiker">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CurrentGebruiker" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Progress">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Progress" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Pic">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Pic" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.HobbyHide">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "HobbyHide" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EnteredUser">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EnteredUser" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Remember">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Remember" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.LoadingList">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "LoadingList" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EnteredEmail">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EnteredEmail" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EnteredFirstName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EnteredFirstName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EnteredBirthDate">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EnteredBirthDate" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EnteredCity">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EnteredCity" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EnteredGender">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EnteredGender" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EnteredPreference">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EnteredPreference" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Cities">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Cities" generated properties.</summary>
+        </member>
+    </members>
+</doc>

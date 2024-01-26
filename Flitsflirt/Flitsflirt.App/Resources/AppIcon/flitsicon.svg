@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" width="456"
+   height="456">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="150.125" y1="109.296" x2="150.125" y2="353.643" id="gradient-1" gradientTransform="matrix(1.876669, 0.401081, -0.399595, 1.869715, -74.537144, -246.397453)">
+      <stop offset="0" style="stop-color: rgb(246, 209, 20);"/>
+      <stop offset="1" style="stop-color: rgb(248, 130, 13);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="225.851" y1="109.592" x2="225.851" y2="324.199" id="gradient-2" gradientTransform="matrix(1.919048, 0, 0, 2.489465, -124.573811, -376.505348)">
+      <stop offset="0" style="stop-color: rgb(39, 165, 243);"/>
+      <stop offset="1" style="stop-color: rgb(225, 102, 244);"/>
+    </linearGradient>
+  </defs>
+  <path style="paint-order: fill; fill: url(#gradient-1); stroke: rgb(255, 255, 255);" d="M 123.143 18.168 L 250.919 18.168 L 194.264 159.205 L 278.644 159.205 L 62.872 487.082 L 118.321 249.613 L 47.201 250.818 L 123.143 18.168 Z"/>
+  <path style="fill: url(#gradient-2); stroke: rgb(255, 255, 255);" d="M 260.428 18.736 L 228.603 96.028 L 455.927 94.511 L 456.434 18.736 L 260.428 18.736 Z M 287.021 159.253 L 406.51 158.891 L 405.789 232.384 L 257.907 233.529 L 256.478 430.578 L 162.238 429.863 L 161.258 352.668 L 287.021 159.253 Z"/>
+</svg>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flitsflirt.App.Views.RegisterPersonPage"
+             Title="RegisterPersonPage"
+             Shell.NavBarIsVisible="False">
+    <Grid>
+        <Image Source="canvas.png"
+               Aspect="AspectFill"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand"/>
+
+        <Frame HasShadow="True" CornerRadius="20" BorderColor="#A997D9" Margin="5,100,5,100">
+
+
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#A997D9" Offset="0.1" />
+                    <GradientStop Color="#9178D4" Offset="0.1" />
+                </LinearGradientBrush>
+            </Frame.Background>
+
+            <StackLayout Padding="10">
+
+                <Image Source="flitsflirt_logo.svg" HeightRequest="70" Margin="0,0,0,5" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Je bent er bijna!" FontSize="21" FontFamily="FlamanteRomaMedium" TextColor="White" HorizontalOptions="Center"/>
+                <Label Text="Eerst nog jou persoongegevens" FontSize="15" FontFamily="Hero" TextColor="White" Margin="0,0,0,20" HorizontalOptions="Center"/>
+
+                <Frame Margin="0,0,0,10" Padding="0" BackgroundColor="Transparent" CornerRadius="20" HasShadow="True" BorderColor="White">
+                    <Entry x:Name="txtFirstname" FontFamily="HeroLight" Margin="20,0,20,0" PlaceholderColor="White" TextColor="White" Placeholder="Voer voornaam in" Text="{Binding EnteredFirstName}" FontSize="Medium" />
+                </Frame>
+
+                <Frame Margin="0,0,0,10" Padding="0" BackgroundColor="Transparent" CornerRadius="20" HasShadow="True" BorderColor="White">
+                    <DatePicker FontFamily="HeroLight" Margin="20,0,20,0" FontSize="Medium" Format="D" VerticalOptions="CenterAndExpand" Date="{Binding EnteredBirthDate}" />
+                </Frame>
+
+                <Label Padding="20,0,0,0" Text="Dichtstbijzijnde stad" FontSize="Small" FontFamily="Hero"/>
+                <Frame Margin="0,0,0,10" Padding="0" BackgroundColor="Transparent" CornerRadius="20" HasShadow="True" BorderColor="White">
+                    <Picker Margin="20,0,20,0" Title="Stad" FontFamily="HeroLight" TextColor="White" SelectedItem="{Binding EnteredCity}" ItemsSource="{Binding Cities}" FontSize="Medium">
+                    </Picker>
+                </Frame>
+
+                <Label Padding="20,0,0,0" Text="Gender:" FontSize="Small" FontFamily="Hero"/>
+                <Frame Margin="0,0,0,10" Padding="0" BackgroundColor="Transparent" CornerRadius="20" HasShadow="True" BorderColor="White">
+                    <Picker Margin="20,0,20,0" Title="Gender" FontFamily="HeroLight" TextColor="White" SelectedIndex="{Binding EnteredGender}" FontSize="Medium">
+                        <Picker.Items>
+                            <x:String>Man</x:String>
+                            <x:String>Vrouw</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </Frame>
+
+                <Label Text="Voorkeur:" Padding="20,0,0,0" FontFamily="Hero"/>
+                <Frame Margin="0,0,0,50" Padding="0" BackgroundColor="Transparent" CornerRadius="20" HasShadow="True" BorderColor="White">
+                    <Picker Margin="20,0,20,0" Title="Voorkeur" FontFamily="HeroLight" TextColor="White" SelectedIndex="{Binding EnteredPreference}" FontSize="Medium">
+                        <Picker.Items>
+                            <x:String>Mannen</x:String>
+                            <x:String>Vrouwen</x:String>
+                            <x:String>Geen voorkeur</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </Frame>
+
+                <StackLayout Margin="0,0,0,20" Orientation="Horizontal" VerticalOptions="Start" HorizontalOptions="Center">
+                    <Button Padding="30,10,30,10" Margin="0,0,10,0" VerticalOptions="Center" TextColor="Black" FontFamily="HeroLight" BorderColor="Transparent" FontAttributes="Bold" BackgroundColor="#b7a8f0" IsEnabled="True" Text="Terug" Command="{Binding RegisterPageCommand}"/>
+                    <Button Padding="30,10,30,10" VerticalOptions="Center" TextColor="Black" FontFamily="HeroLight" BorderColor="Transparent" FontAttributes="Bold" BackgroundColor="#d5cdf2" IsEnabled="True" Text="Verder" Command="{Binding RegisterHobbiesCommand}"/>
+                </StackLayout>
+
+            </StackLayout>
+
+        </Frame>
+    </Grid>
+</ContentPage>

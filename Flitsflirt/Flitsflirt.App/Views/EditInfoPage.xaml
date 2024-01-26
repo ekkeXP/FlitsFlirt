@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flitsflirt.App.Views.EditInfoPage"
+             Title="EditInfoPage"
+             Shell.NavBarIsVisible="False">
+
+    <Grid>
+        <Image Source="canvas.png"
+               Aspect="AspectFill"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand"/>
+
+        <Frame x:Name="myFrame" HasShadow="True" CornerRadius="20" BorderColor="#A997D9" Margin="5,130,5,130">
+
+
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#A997D9" Offset="0.1" />
+                    <GradientStop Color="#9178D4" Offset="0.1" />
+                </LinearGradientBrush>
+            </Frame.Background>
+
+            <StackLayout Padding="10,10,10,10" VerticalOptions="Center">
+
+                <StackLayout Margin="0,0,0,50"  Orientation="Horizontal" HorizontalOptions="Center">                                                                                                 
+                    <Button IsEnabled="True" Padding="20,10,20,10" CornerRadius="100" VerticalOptions="Center" TextColor="White" FontFamily="HeroLight" FontSize="20" BorderColor="Transparent"  BackgroundColor="Transparent" Text="🔒" Command="{Binding EditCommand}"/>
+                    <Button IsEnabled="True" Padding="20,10,20,10" CornerRadius="100" VerticalOptions="Center" TextColor="White" FontFamily="HeroLight" FontSize="20" BorderColor="Transparent"  BackgroundColor="Transparent" Text="🧑" Command="{Binding EditHobbiesCommand}"/>
+                    <Button IsEnabled="False" Padding="20,10,20,10" CornerRadius="100" VerticalOptions="Center" TextColor="White" FontFamily="HeroLight" FontSize="20" BorderColor="Transparent" BackgroundColor="#9178D4" Text="ℹ️" Command="{Binding EditInfoCommand}"/>
+                    <Button IsEnabled="True" Padding="20,10,20,10" CornerRadius="100" VerticalOptions="Center" TextColor="White" FontFamily="HeroLight" FontSize="20" BorderColor="Transparent"  BackgroundColor="Transparent" Text="❌" Command="{Binding LogoutCommand}"/>
+                </StackLayout>
+
+                <Image Source="info_icon" HeightRequest="100" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Info over app" FontSize="24" FontFamily="FlamanteRomaMedium" TextColor="White" HorizontalOptions="Center" Margin="0,0,0,10"/>
+
+                <Label FontFamily="Hero" Margin="0,0,0,5" Text="FlitsFlirt is een revolutionaire dating-app waarbij gebruikers in slechts 8 seconden beslissen door naar rechts of links te swipen." TextColor="White" FontAttributes="Bold"/>
+                <Label FontFamily="Hero" Margin="0,0,0,20" Text="Ontdek snel potentiële matches en maak een flitsende verbinding." TextColor="White" FontAttributes="Bold"/>
+
+                <Label FontFamily="Hero" HorizontalOptions="Center" Margin="0,0,0,5" FontAttributes="Italic" Text="Klik op de knop hieronder voor meer info" TextColor="White"/>
+
+                <Button VerticalOptions="Center" TextColor="Black" FontFamily="HeroLight" BorderColor="Transparent" FontAttributes="Bold" BackgroundColor="#d5cdf2" IsEnabled="True" Text="Volg tutorial" Command="{Binding TutorialCommand}"/>
+                <Button Text="Terug naar account" TextColor="white" FontFamily="Hero" FontAttributes="Bold" BackgroundColor="Transparent" BorderColor="Transparent" Command="{Binding BackCommand}" />
+            </StackLayout>
+
+        </Frame>
+    </Grid>
+
+</ContentPage>
